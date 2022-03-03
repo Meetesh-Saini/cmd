@@ -286,7 +286,12 @@ try:
             else:
                 err("file do not exists.")
         elif command == "clear":
-            os.system("clear")
+            if os.name=="posix":
+                os.system("clear")
+            elif os.name=="nt":
+                os.system("cls")
+            else:
+                err("Cannot clear screen")
         elif command=='':
             pass
         else:
