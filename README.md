@@ -1,5 +1,5 @@
 # cmd
-A bash clone with some working functionalities.
+A bash clone with some working functionalities. You cannot access the real files on the system. It creates a virtual directory structure which cannot read, write, delete or update the real files on the system. You can do these operations with the files and directories which are inside my cmd only.
 
 ## Stable Commands:
 ### Bash like Commands
